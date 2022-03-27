@@ -9,3 +9,5 @@ elif profit == costs:
 else:
     print("Фирма работает в убыток")
 
+
+
