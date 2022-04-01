@@ -13,6 +13,7 @@ print(power(float(input("Первое значение - ")), int(input("Вто�
 
 
 
+
 def pow_h(base, degree, module):
     degree = bin(degree)[2:]
     r = 1
@@ -22,3 +23,8 @@ def pow_h(base, degree, module):
         r = (r * base ** int(degree[i])) % module
     base = (base ** 2) % module
     return r
+
+def my_func(x, y):
+    return 1 / x ** abs(y)
+    #return x ** y
+print(my_func(2, -3))
